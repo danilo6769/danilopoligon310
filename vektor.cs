@@ -25,5 +25,18 @@ namespace danilopoligon310
             double y = kraj.y - pocetak.y;
             return new tacka(x, y);
         }
+        static public double SP(vektor a, vektor b)
+        {
+            tacka A = a.centriraj();
+            tacka B = b.centriraj();
+            return A.x * B.x + A.y * B.y;
+        }
+        static public double VP(vektor a, vektor b)
+        {
+            tacka A = a.centriraj();
+            tacka B = b.centriraj();
+            double k = A.x * B.y - A.y * B.x;
+            return k;
+        }
     }
 }
