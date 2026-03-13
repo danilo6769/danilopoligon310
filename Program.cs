@@ -11,6 +11,8 @@ namespace danilopoligon310
         static void Main(string[] args)
         {
             // Danilo Lazarevic
+            tacka a = new tacka(1, 1);
+            Console.WriteLine(a.ugao());
         }
     }
 }
